@@ -32,6 +32,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'devise'
+
+gem 'rolify'
+
+gem 'cancan'
+
 gem 'bootstrap-sass'
 
 gem 'figaro'

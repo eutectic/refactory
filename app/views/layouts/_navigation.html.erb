@@ -1,8 +1,39 @@
-<ul class="nav">
+
+<ul class="navbar nav">
   <a class="brand">ReFactory</a>
   <li><%= link_to 'Home', root_path %></li>
   <li><%= link_to 'Services', page_path('services') %></li>
   <li><%= link_to 'Capabilities', page_path('capabilities') %></li>
   <li><%= link_to 'Contact', page_path('contact') %></li>
   <li><%= link_to 'About', page_path('about') %></li>
+   <% if user_signed_in? %>
+    
+    <li><%= link_to 'Designs', page_path('about') %></li>
+    </li>
+   <% end %>
+</ul>
+<ul class="nav navbar-right">
+  <% if user_signed_in? %>
+    <li>
+    <%= link_to('Logout', destroy_user_session_path, :method=>'delete') %>
+    </li>
+  <% else %>
+    <li>
+    <%= link_to('Login', new_user_session_path)  %>
+    </li>
+  <% end %>
+  <% if user_signed_in? %>
+    <li>
+    <%= link_to('Edit account', edit_user_registration_path) %>
+    </li>
+    <% if current_user.has_role? :admin %>
+      <li>
+      <%= link_to('Admin', users_path) %>
+      </li>
+    <% end %>
+  <% else %>
+    <li>
+    <%= link_to('Sign up', new_user_registration_path)  %>
+    </li>
+  <% end %>
 </ul>

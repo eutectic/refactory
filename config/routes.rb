@@ -1,5 +1,14 @@
 Refactory::Application.routes.draw do
   root :to => 'visitors#new'
+  
+  devise_for :users
+  resources :users
+  
+  devise_scope :users do
+    get '/home', :to => 'visitors#user', :as => :user_root
+  end  
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

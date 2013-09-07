@@ -1,0 +1,4 @@
+<h3>Usah</h3>
+<% @users.each do |user| %>
+<p>User: <%= link_to user.email, user %>, <%=user.roles.map{|r| r.name}.join(',')%>  </p>
+<% end %>
