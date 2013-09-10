@@ -51,7 +51,7 @@ group :development do
   gem 'quiet_assets'
 end
 
-
+gem 'json'
 
 group :test do
   gem 'cucumber-rails', :require => false
@@ -69,4 +69,4 @@ end
 # gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]

@@ -3,9 +3,11 @@ Refactory::Application.routes.draw do
   
   devise_for :users
   resources :users
+  resources :designs
   
   devise_scope :users do
-    get '/home', :to => 'visitors#user', :as => :user_root
+    get '/home', :to => 'designs#index', :as => :user_root
+    
   end  
 
   

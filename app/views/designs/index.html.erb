@@ -1,0 +1,25 @@
+<h3>Designs</h3>
+
+<% if @designs == nil %>
+<p>No designs</p>
+<% else %>
+<table>
+<% @designs.each do |design| %>
+<tr>
+   <td><%= design.name %> </td>  
+  <td><%= design.status %> </td>  
+  <td><%= design.id %> </td>
+  <td><%= design.user_id %> </td>  
+</tr>
+<% end %>
+  </table>
+<% end %>
+
+<%= button_to "New Design", :action => "new" %>
+
+<%= link_to 'create', new_design_path %>
+
+
+
+
+ 

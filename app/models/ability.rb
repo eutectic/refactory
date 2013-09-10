@@ -8,9 +8,16 @@ class Ability
       # if user.admin?
       if user.has_role? :admin
           can :manage, :all
-       else
-         can :read, :all
+      elsif user.has_role? :user
+        can :read, :all
+        can :create, Design
+        can [:update, :destroy, :edit], Design do |design|
+          design.try(:user) == user
        end
+      
+
+      end
+    
     #
     # The first argument to `can` is the action you are giving the user 
     # permission to do.

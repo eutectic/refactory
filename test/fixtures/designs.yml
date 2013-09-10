@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  status: MyString
+  created: 2013-09-07 14:20:45
+  submitted: 2013-09-07 14:20:45
+  data: 
+
+two:
+  user_id: 1
+  status: MyString
+  created: 2013-09-07 14:20:45
+  submitted: 2013-09-07 14:20:45
+  data: 

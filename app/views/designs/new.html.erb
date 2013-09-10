@@ -1,0 +1,12 @@
+<h3>Designs</h3>
+<%if can? :create, @design %>
+<p>yay!</p>
+<% else %>
+<p>poop</p>
+<% end %>
+<%= form_for(@design) do |f| %>
+<%= f.hidden_field :user_id, :value => current_user.id %>
+  <%= f.text_field:name %>
+  <%= f.text_area:data %>
+  <%= f.submit%>
+<% end %>
