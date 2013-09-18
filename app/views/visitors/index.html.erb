@@ -25,6 +25,8 @@
             <div class="carousel-caption">
               <h1>Making Hardware Easy.</h1>
               <p>ReFactory will change the way we make the things we love.  We help startups design, test and manufacture the next big products of tomorrow.</p>
+              <%= button_to "Sign up today", new_user_registration_path, :id => "open-contacts-dialog-btn",:class => "btn btn-large btn-primary", :method => :get %>
+              
               <p><a class="btn btn-large btn-primary" href="#">Sign up today</a></p>
             </div>
           </div>
@@ -35,6 +37,7 @@
             <div class="carousel-caption">
               <h1 style="color: rgb(58, 57, 57);">Streamlining a complex process.</h1>
               <p style="color: rgb(58, 57, 57);">Every hardware startup faces the same issues in getting their.  We've revolutionized the process so that makers can make without all the pain and risk.</p>
+              
               <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
             </div>
           </div>
@@ -50,8 +53,9 @@
           </div>
         </div>
    </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+     <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"></a>
   </div>
     
           <!-- Marketing messaging and featurettes

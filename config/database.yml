@@ -54,7 +54,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: refactory_production
+  database: df5hsjpleaiipf
   pool: 5
-  username: refactory
-  password:
+  username: sjafoyyzluupef
+  password: QXrWX4EarAudO0ewZ4BpoefnKe
