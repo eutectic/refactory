@@ -1,5 +1,5 @@
 Refactory::Application.routes.draw do
-  root :to => 'visitors#new'
+  root :to => 'visitors#index'
   
   devise_for :users
   resources :users
