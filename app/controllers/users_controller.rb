@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
   before_filter :authenticate_user!
 
+  def create
+    Users.create{params[:user]}
+  end
+  
   def index
     authorize! :index, @user, :message => 'Not authorized as an administrator.'
     @users = User.all
