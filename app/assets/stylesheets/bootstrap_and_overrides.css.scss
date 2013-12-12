@@ -1,7 +1,6 @@
 @import "bootstrap";
 $iconSpritePath: asset-url('glyphicons.png', image);
-body { padding-top: 60px; 
-  
+body {   
   color: #5a5a5a;
 }
 .navbar .navbar-right {
@@ -35,7 +34,7 @@ body { padding-top: 60px;
 .navbar {
 position: relative;
 z-index: 1000;
-min-height: 50px;
+min-height: 65px;
 margin-bottom: 20px;
 border: 1px solid transparent;
   
@@ -47,9 +46,7 @@ border: 1px solid transparent;
 padding-top: 11px;
 }
 
-.navbar-wrapper .navbar {
-border-radius: 4px;
-}
+
 body {
 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 14px;
@@ -57,7 +54,9 @@ line-height: 1.428571429;
 color: #333333;
 }
 
-
+.row-fluid{
+padding-top:30px;
+}
 
 
 /* Carousel base class */
@@ -69,7 +68,7 @@ right:0;
   
 
   /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-  margin-top: -166px;
+  margin-top: -110px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -97,7 +96,7 @@ right:0;
    position: static;
   max-width: 550px;
   padding: 20px 20px;
-  margin-top: 200px;
+  margin-top: 160px;
   background: transparent;
   border-radius: 4px;
 }
