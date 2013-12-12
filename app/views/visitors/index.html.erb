@@ -24,8 +24,8 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Making Hardware Easy.</h1>
-              <p>ReFactory will change the way we make the things we love.  We help startups design, test and manufacture the next big products of tomorrow.</p>
-              <%= button_to "Sign up today", new_user_registration_path, :id => "open-contacts-dialog-btn",:class => "btn btn-large btn-primary", :method => :get %>
+              <p>creating hardware products should be as easy as launching a web application.</p>
+              <%= button_to "Sign up to stay in the loop.", new_user_registration_path, :id => "open-contacts-dialog-btn",:class => "btn btn-large btn-primary", :method => :get %>
               
             </div>
           </div>
@@ -37,7 +37,7 @@
               <h1 style="color: rgb(58, 57, 57);">Streamlining a complex process.</h1>
               <p style="color: rgb(58, 57, 57);">Every hardware startup faces the same issues in getting their.  We've revolutionized the process so that makers can make without all the pain and risk.</p>
               
-              <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+              <%= button_to "Register to stay connected.", new_user_registration_path, :id => "open-contacts-dialog-btn",:class => "btn btn-large btn-primary", :method => :get %>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@
             <div class="carousel-caption">
               <h1>Local.</h1>
               <p>Develop your product and the manufacturing process locally. </p>
-              <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+               <%= button_to "Learn More",  page_path('design'),:class => "btn btn-large btn-primary", :method => :get%>
             </div>
           </div>
         </div>
