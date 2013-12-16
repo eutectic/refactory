@@ -5,10 +5,9 @@ class DesignsController < ApplicationController
   load_and_authorize_resource
   
   def index
-    
-    
-    @designs = Design.where(:user_id => current_user.id)
-    
+        
+    #@designs = Design.where(:user_id => current_user.id)
+    @designs = nil
    end
   
   def show
@@ -18,7 +17,7 @@ class DesignsController < ApplicationController
   def new
 
     @design = Design.new()
-     end
+  end
 
  
 

@@ -1,0 +1,23 @@
+<% content_for :title do %>ReFactory Blog<% end %>
+<h3 class="text-center">ReFactory Blog</h3>
+
+
+  <% @posts.each do |post| %>
+    <h4 class="text-left"><%= post.title %></h4>
+    
+    <p><%= RedCloth.new(post.text).to_html.html_safe %></p>
+      <% if can? :update, post %>
+         <%= link_to 'Edit', edit_post_path(post), class: 'label label-warning btn-xs' %> | 
+         <% end %>
+         <% if can? :destroy, post %>
+        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'label label-danger btn-xs' %>
+        <% end %>
+    <br/>
+    <br/>
+
+
+  <% end %>
+<% if can? :create, Post %>
+  <%= link_to 'New Post', new_post_path , class: 'btn btn-danger'%>
+<% end %>
+

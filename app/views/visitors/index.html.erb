@@ -24,7 +24,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Making Hardware Easy.</h1>
-              <p>Hardware development as easy as web app development.</p>
+              <p>Develop hardware as quickly as software.</p>
               <%= button_to "Sign up to stay in the loop.", new_user_registration_path, :id => "open-contacts-dialog-btn",:class => "btn btn-large btn-primary", :method => :get %>
               
             </div>
@@ -77,13 +77,13 @@
            <%= image_tag "circuit-128.png",  :style => "margin: 0 auto; display: block" %>
           <h2>Prototype</h2>
           <p>Once you get the design figured out, ReFactory can build a functional prototype so that you can begin firmware and software development quickly.  We use a combination of in house capabilities and trusted suppliers.=</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <p><%= button_to "View Details",  page_path('prototyping'),:class => "btn ", :method => :get%></p>
         </div><!-- /.span4 -->
         <div class="span4">
            <%= image_tag "factory-128.png",  :style => "margin: 0 auto; display: block" %>
           <h2>Manufacture</h2>
           <p>Once you are ready to hit the market we can help build your initial production runs.  With out in house capability, we offer flexible manufacturing options so that we can get your product into customers' hands quickly.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <p><p><%= button_to "View Details",  page_path('manufacturing'),:class => "btn ", :method => :get%></p></p>
         </div><!-- /.span4 -->
       </div><!-- /.row -->
    </div><!-- /.marketing -->

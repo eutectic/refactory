@@ -9,3 +9,4 @@ class User::ParameterSanitizer < Devise::ParameterSanitizer
     end
 end
 
+# this is from this http://blog.12spokes.com/web-design-development/adding-custom-fields-to-your-devise-user-model-in-rails-4/ blog

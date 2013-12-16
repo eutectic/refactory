@@ -4,11 +4,12 @@ Refactory::Application.routes.draw do
   devise_for :users
   resources :users
   resources :designs
+  resources :posts
   
-  devise_scope :users do
-    get '/home', :to => 'designs#index', :as => :user_root
+  #devise_scope :users do # this redirects after signin
+    #get '/home', :to => 'designs#index', :as => :user_root
     
-  end  
+ # end  
 
   
   # The priority is based upon order of creation: first created -> highest priority.

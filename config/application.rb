@@ -1,5 +1,5 @@
 require File.expand_path('../boot', __FILE__)
-
+require 'devise'  #added this per http://stackoverflow.com/questions/6551946/why-do-i-get-uninitialized-constant-devise-name-error-when-running-webrick-serve fromfunky signout
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems

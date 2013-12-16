@@ -32,6 +32,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'RedCloth' , :require => 'redcloth'
+
 gem 'devise'
 
 gem 'rolify'
@@ -58,6 +60,8 @@ group :test do
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
 end
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

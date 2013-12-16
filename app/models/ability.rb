@@ -14,9 +14,19 @@ class Ability
         can [:update, :destroy, :edit], Design do |design|
           design.try(:user) == user
        end
+        
+      elsif user.has_role? :blogger
+       can :create, Post
+       can [:update, :destroy, :edit], Post do |post|
+            post && post.user == user
+       end
+          
+      else 
+        can :read, Post
+      end
+    
       
 
-      end
     
     #
     # The first argument to `can` is the action you are giving the user 
